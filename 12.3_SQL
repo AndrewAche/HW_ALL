@@ -1,0 +1,43 @@
+# Домашнее задание к занятию  12.3. "SQL. Часть 1" - `Ачеусов Андрей`
+
+### Задание 1
+
+select distinct district 
+from address 
+where district like 'k%a' and district not like '% %';
+
+---
+
+
+
+### Задание 2
+
+select *  
+from payment  
+where payment_date between CAST('2005-06-15' AS DATE) AND CAST('2005-06-19' AS DATE)  
+and amount > 10;  
+
+---
+
+
+
+### Задание 3
+
+select *  
+from rental  
+order by rental_date desc  
+limit 5;  
+
+---
+
+
+
+### Задание 4
+
+select LOWER(REPLACE(first_name, 'LL', 'pp')), LOWER(last_name)  
+from customer c   
+where first_name = 'Kelly' or first_name = 'Willie';  
+
+---
+
+
