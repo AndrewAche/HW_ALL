@@ -15,11 +15,11 @@
 
 
 Информация по версии сервера:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/20552d02-406d-4f9e-b78a-3911a11c9003)
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/20552d02-406d-4f9e-b78a-3911a11c9003)  
 
 
 Запрос кол-ва строк с `price` > 300  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9d35ac68-21fc-4f2e-bad5-a74863ff7100)
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9d35ac68-21fc-4f2e-bad5-a74863ff7100)  
 
 
 
