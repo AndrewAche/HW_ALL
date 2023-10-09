@@ -86,6 +86,10 @@ ansible 2.10.8
 ### Задание 4
 
 
+Все необходимые настройки проведены  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e93c48e3-5989-4add-b1b5-460b29b53974)  
+
+
 В процессе выполнения выяснилось, что мой процессов облочной ВМ не поддерживает виртуализацию:  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9b863d8a-77fc-4232-ac5b-4d0c362d0669)  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e54c1ba2-199b-4d0e-9252-579caae7d8c2)  
