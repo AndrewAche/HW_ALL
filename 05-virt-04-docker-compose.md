@@ -22,7 +22,8 @@
 
 ### Задание 3
 
-
+Скопировал docker-compose.yaml с содержимым, запустил в том же дистрибутиве `docker-compose up -d`:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2f4835ba-be7c-45a6-9652-18ddb3ab92f0)  
 
 
 ---
