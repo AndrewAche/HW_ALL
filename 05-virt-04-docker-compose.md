@@ -24,6 +24,7 @@
 ### Задание 3
 
 Скопировал docker-compose.yaml с содержимым, запустил в том же дистрибутиве `docker-compose up -d`:  
+НЕ ВСЕ контейнеры поднялись:  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2f4835ba-be7c-45a6-9652-18ddb3ab92f0)  
 
 
@@ -33,6 +34,8 @@
 
 ### Задание 4
 
+Графана не открывается. По причине того, что не все контейнеры из Задания 3 поднялись?  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/0b0f696f-bd1c-42a2-9208-eb90a5049686)
 
 
 
