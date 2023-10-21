@@ -3,6 +3,7 @@
 ### Задание 0.1
 
 Скачайте и установите Terraform версии =1.5.5 (версия 1.6 может вызывать проблемы с Яндекс провайдером) . Приложите скриншот вывода команды terraform --version.  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/0e525ec0-7dbf-49ef-975d-abdb3b859b3c)  
 
 
 
