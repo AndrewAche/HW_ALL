@@ -24,8 +24,9 @@
 ### Задание 3
 
 Скопировал docker-compose.yaml с содержимым, запустил в том же дистрибутиве `docker-compose up -d`:  
-НЕ ВСЕ контейнеры поднялись:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2f4835ba-be7c-45a6-9652-18ddb3ab92f0)  
+На этот раз всё поднялось, правда пришлось заново создавать ВМ (поэтому логин отличается последней цифрой)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/86f16c26-65aa-4df3-b24f-280486efa257)
+
 
 
 ---
@@ -34,8 +35,12 @@
 
 ### Задание 4
 
-Графана не открывается. По причине того, что не все контейнеры из Задания 3 поднялись?  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/0b0f696f-bd1c-42a2-9208-eb90a5049686)
+Графана открывается. По причине того, что дорабатывал ДЗ, использовал другу ВМ:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/75a6546b-e204-4e02-a992-0b0b7b0689d5)  
+
+Соответсвенно URL:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/958714b3-03db-4a8f-b6f2-4a9827761356)
+
 
 
 
