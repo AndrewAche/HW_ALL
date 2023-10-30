@@ -13,7 +13,7 @@
 
 ### Задание 1
 1.  Перейдите в каталог src. Скачайте все необходимые зависимости, использованные в проекте.  
-`git clone https://github.com/netology-code/ter-homeworks/tree/main/01/src`
+`git clone https://github.com/netology-code/ter-homeworks/tree/main/01/src`  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/387026ab-bf51-420b-9b4e-8f29ccfbf1eb)  
 
 2.  
