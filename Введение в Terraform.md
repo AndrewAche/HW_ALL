@@ -27,25 +27,29 @@
 4.  Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду `terraform validate`. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.  
 Ошибка 1 состоит в отсутствие имени для ресурса "docker_image", т.е. указан только тип ресурса, без "name", что некорректно  
 Ошибка 2 состоит в неправльном имени ресурса = "1nginx"  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/49e6295f-70d1-44ed-ba21-9b8abe4293a1)
-Скорректированная конфигурация:
-`resource "docker_image" "nginx" {
+Ошибка 3 состоит в неправльной ссылке: "random_string_FAKE.resulT" - необходимо убрать FAKE, т.к. это нигде не заявлено и "resulT" заменить на "result"  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/49e6295f-70d1-44ed-ba21-9b8abe4293a1)  
+
+
+6.  Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды `docker ps`.  
+Скорректированная конфигурация:  
+`... resource "docker_image" "nginx" {
   name         = "nginx:latest"
   keep_locally = true
 }
 
-resource "docker_container" "nginx" {
+resource "docker_container" "nginx_1" {
   image = docker_image.nginx.image_id
-  name  = "example_${random_password.random_string_FAKE.resulT}"
+  name  = "example_${random_password.random_string.result}"
 
   ports {
     internal = 80
     external = 8000
   }
-}`
+}`    
 
-
-6.  Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды `docker ps`.  
+Результат `docker ps`:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/60bcb165-9452-447b-bb2b-80c6b8b86544)  
 
 
 7.  Замените имя docker-контейнера в блоке кода на `hello_world`. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду `terraform apply -auto-approve`. Объясните своими словами, в чём может быть опасность применения ключа `-auto-approve`. В качестве ответа дополнительно приложите вывод команды `docker ps`.  
