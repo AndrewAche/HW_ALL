@@ -36,7 +36,38 @@
 2. Замените все хардкод-значения для ресурсов yandex_compute_image и yandex_compute_instance на отдельные переменные. К названиям переменных ВМ добавьте в начало префикс vm_web_ . Пример: vm_web_name.
 3. Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. Заполните их default прежними значениями из main.tf.
 4. Проверьте terraform plan. Изменений быть не должно.
+Введены новые переменные:  
+```
+###yandex_compute_image vars
 
+variable "vm_web_family_image" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+}
+
+
+###yandex_compute_instance vars
+
+variable "vm_web_cores" {
+  type        = number
+  default     = 2
+}
+
+variable "vm_web_memory" {
+  type        = number
+  default     = 1
+}
+
+variable "vm_web_fraction" {
+  type        = number
+  default     = 5
+}
+```
+Переменные внесены в main.tf:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/44e6a3c7-150a-4f85-a254-21a9e123af89)  
+
+По итогу:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e78edb8f-6f86-44b3-87b2-d7139b4fba7f)  
 
 
 ---
