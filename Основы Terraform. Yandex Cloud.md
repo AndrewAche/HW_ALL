@@ -81,6 +81,8 @@ variable "vm_web_fraction" {
 3. Примените изменения.
 
 
+
+
 ---
 
 
