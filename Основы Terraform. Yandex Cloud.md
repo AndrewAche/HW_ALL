@@ -85,8 +85,7 @@ variable "vm_web_fraction" {
 
 main.tf  
 <details><summary></summary>
-```
-  GNU nano 5.4                                                                                                                                                                                                                                                                                                                                                         main.tf                                                                                                                                                                                                                                                                                                                                                                  resource "yandex_vpc_network" "develop" {
+                                                                                                                                                                                                                                                              resource "yandex_vpc_network" "develop" {
   name = var.vpc_name
 }
 resource "yandex_vpc_subnet" "develop" {
@@ -170,8 +169,6 @@ resource "vm_db_yandex_compute_instance" "vm_db_platform" {
   }
 
 }
-
-   ```
 
 </details>
 
