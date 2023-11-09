@@ -12,6 +12,12 @@
 <details><summary></summary>
 
    ```
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d0072d66-8bb1-462c-9806-2664128a68ad)  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/34adc039-1506-47c2-8657-4daa858abc33)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/f3396d74-1238-4858-8013-fb42d02be3cf)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e5bdfa82-ea9f-4f78-bb56-c7f914296667)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/7695ba0d-a33e-4e8c-8700-3617abb3dfea)
 
   
 ```
