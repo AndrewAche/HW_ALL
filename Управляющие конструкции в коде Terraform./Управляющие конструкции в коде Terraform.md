@@ -29,7 +29,7 @@
 <details><summary></summary>
 
    ```
-ata "yandex_compute_image" "ubuntu" {
+data "yandex_compute_image" "ubuntu" {
   family = var.vm_web_family_image
 }
 resource "yandex_compute_instance" "web" {
@@ -61,6 +61,7 @@ resource "yandex_compute_instance" "web" {
 ```
 
 </details>
+
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/4d28e368-7f51-499a-a548-0515cf16c9a1)
 
 
