@@ -175,11 +175,55 @@ locals {
 <details><summary></summary>
 
    ```
+resource "yandex_compute_disk" "stor" {
+  count = 3
+  name  = "disk-${count.index + 1}"
+  size  = 1
+}
+
+data "yandex_compute_image" "ubuntu3" {
+  family = var.vm_web_family_image
+}
+resource "yandex_compute_instance" "storage" {
+  name = "storage"
+  resources {
+        cores           = 2
+        memory          = 1
+        core_fraction = 5
+  }
+
+  boot_disk {
+        initialize_params {
+        image_id = data.yandex_compute_image.ubuntu.image_id
+        }
+  }
+
+  dynamic "secondary_disk" {
+   for_each = "${yandex_compute_disk.stor.*.id}"
+   content {
+        disk_id = yandex_compute_disk.stor["${secondary_disk.key}"].id
+   }
+  }
+
+  network_interface {
+        subnet_id = var.network_interface
+        nat     = true
+  }
+
+  metadata = {
+        ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
+  }
+}
 
   
 ```
 
 </details>
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2e3acabb-cfcd-41ad-a011-cebb8fd952be)  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/82bf2ff3-b835-4e7d-9821-13dca54b1bb6)
+
 
 ---
 
