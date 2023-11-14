@@ -66,6 +66,70 @@ resource "yandex_compute_instance" "web" {
 
 
 2. Создайте файл for_each-vm.tf. Опишите в нём создание двух ВМ с именами "main" и "replica" **разных** по cpu/ram/disk , используя мета-аргумент **for_each loop**. Используйте для обеих ВМ одну общую переменную типа list(object({ vm_name=string, cpu=number, ram=number, disk=number  })). При желании внесите в переменную все возможные параметры.
+
+***Решение:***  
+<details><summary></summary>
+
+   ```
+data "yandex_compute_image" "ubuntu2" {
+  family = var.vm_web_family_image
+}
+resource "yandex_compute_instance" "for_each" {
+
+depends_on = [ yandex_compute_instance.web ]
+
+  for_each = { for vm in local.vms_fe: "${vm.vm_name}" => vm }
+  name = each.key
+  resources {
+        cores           = each.value.cpu
+        memory          = each.value.ram
+        core_fraction = each.value.frac
+  }
+
+  boot_disk {
+        initialize_params {
+          image_id = data.yandex_compute_image.ubuntu.image_id
+        }
+  }
+
+  network_interface {
+        subnet_id = var.network_interface
+        nat     = true
+  }
+
+  metadata = {
+        ssh-keys = local.ssh
+  }
+}
+
+locals {
+  vms_fe = [
+        {
+        vm_name = "main"
+        cpu     = 2
+        ram     = 2
+        frac    = 20
+        },
+        {
+        vm_name = "replica"
+        cpu     = 4
+        ram     = 4
+        frac    = 100
+        }
+  ]
+}
+
+locals {
+  ssh = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
+}
+  
+```
+
+</details>
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/774954a7-9678-4929-b2d4-31ac3966a308)
+
+
 3. ВМ из пункта 2.2 должны создаваться после создания ВМ из пункта 2.1.
 4. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata, взятому из ДЗ 2.
 5. Инициализируйте проект, выполните код.
