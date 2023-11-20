@@ -244,7 +244,9 @@ resource "yandex_compute_instance" "storage" {
 <details><summary></summary>
 
    ```
-
+Результат вывода файла inventory:    
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e4a8543d-5cf8-4fbd-890c-06fd4053779f)  
+Файлы ansible.tf, inventory.tftpl  приложены  
   
 ```
 
