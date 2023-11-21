@@ -51,3 +51,21 @@ variable "network_interface" {
   type        = string
   default     = "e9bhbgch29gu08s5ma4n"
 }
+
+###for each_vm
+
+variable "vms_settings"{
+  type=list(object({ vm_name=string, cpu=number, ram=number, frac=number }))
+  default = [{
+    vm_name="main"
+    cpu=2
+    ram=2
+    frac=20
+  },
+  {
+    vm_name="replica"
+    cpu=4
+    ram=4
+    frac=100
+  }]
+}
