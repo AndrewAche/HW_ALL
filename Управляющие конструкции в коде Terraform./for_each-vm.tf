@@ -5,8 +5,8 @@ resource "yandex_compute_instance" "for_each" {
 
 depends_on = [ yandex_compute_instance.web ]
 
-  for_each = { for vm in local.vms_fe: "${vm.vm_name}" => vm }
-  name = each.key
+  for_each = { for vm in var.vms_settings: index(var.vms_settings,vm)=> vm }
+  name        = each.value.vm_name
   resources {
         cores           = each.value.cpu
         memory          = each.value.ram
@@ -29,22 +29,6 @@ depends_on = [ yandex_compute_instance.web ]
   }
 }
 
-locals {
-  vms_fe = [
-        {
-        vm_name = "main"
-        cpu     = 2
-        ram     = 2
-        frac    = 20
-        },
-        {
-        vm_name = "replica"
-        cpu     = 4
-        ram     = 4
-        frac    = 100
-        }
-  ]
-}
 
 locals {
   ssh = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
