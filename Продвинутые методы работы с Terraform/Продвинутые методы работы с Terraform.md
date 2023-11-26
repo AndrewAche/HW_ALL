@@ -9,14 +9,12 @@
 4. Предоставьте скриншот подключения к консоли и вывод команды ```sudo nginx -t```.
 
 ***Решение:***  
-<details><summary></summary>
+ВМ созданы:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/db9506ff-0db2-4ff2-8fd2-c87b5ad1a18d)  
+Но откуда взять парроль, не понимаю... Он же нигде не задан, по ssh же подключение:   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/4b4eea12-fbb4-4b93-ac9f-90f848cfcec7)
 
-   ```
 
-  
-```
-
-</details>
 
 ---
 
