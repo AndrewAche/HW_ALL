@@ -56,11 +56,10 @@
 1. Решение для п. 1:  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/1f255038-badc-4599-8d75-417eb1288f5b)  
 2. Решение для п. 2:  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/49fe7c2c-6689-4ec0-8176-6ee446a16178)  
 3. Решение для п. 3:  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/7ad51a84-02ac-4b2a-bfde-3fa3e0eb0e57)  
 4. Решение для п. 4:  
-
 
 
 ---
