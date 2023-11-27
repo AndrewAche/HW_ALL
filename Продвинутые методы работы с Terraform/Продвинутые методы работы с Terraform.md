@@ -35,6 +35,7 @@
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/691dc554-5aae-4b10-a947-11aaad56aa3d)  
 Для генерации документации используется модуль terraform-docs и команда:  
 >  docker run --rm --volume "$(pwd):/terraform-docs" -u $(id -u) quay.io/terraform-docs/terraform-docs:0.16.0 markdown /terraform-docs > doc.md
+
 В итоге (приложил в файле doc.md):   
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5e37ac92-88bb-4e05-82cc-58645f734ae2)  
 
