@@ -29,14 +29,15 @@
 6. Сгенерируйте документацию к модулю с помощью terraform-docs.    
 
 ***Решение:***  
-<details><summary></summary>
+В terraform concole вывод после выполнения пункта 3 задания:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5d5f2cbc-3fd4-442e-a1ad-13b14c3c765d)  
+В terraform concole вывод после выполнения пункта 5 задания и применения apply:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/691dc554-5aae-4b10-a947-11aaad56aa3d)  
+Для генерации документации используется модуль terraform-docs и команда:  
+> terraform-docs markdown table --output-file Readme.md ./modules/vpc_dev  
+В итоге:  
 
-   ```
 
-  
-```
-
-</details>
 
 ---
 
