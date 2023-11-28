@@ -64,7 +64,7 @@
 
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/bc61fb0f-797b-4138-b639-51002cdb90ad)  
 
->  terraform import module.vpc_dev.yandex_vpc_network.network enpopk26b92vnjm24ih0  
+```terraform import module.vpc_dev.yandex_vpc_network.network enpopk26b92vnjm24ih0  ```
 
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b8a577e9-c6a3-4504-baf2-4783e8d74aab)  
 
