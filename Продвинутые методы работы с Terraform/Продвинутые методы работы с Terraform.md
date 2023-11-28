@@ -60,6 +60,22 @@
 3. Решение для п. 3:  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/7ad51a84-02ac-4b2a-bfde-3fa3e0eb0e57)  
 4. Решение для п. 4:  
+>  terraform import module.vpc_dev.yandex_vpc_subnet.subnet e9bngie065r6khjlhj77  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/bc61fb0f-797b-4138-b639-51002cdb90ad)  
+
+>  terraform import module.vpc_dev.yandex_vpc_network.network enpopk26b92vnjm24ih0  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b8a577e9-c6a3-4504-baf2-4783e8d74aab)  
+
+>  terraform import module.test-vm.yandex_compute_instance.vm[0] fhmkm5mm3qh9n76h370v  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5cc0d7bb-9c01-4cc2-9cf4-ff3b5c3d1e75)  
+
+>  terraform import module.test-vm.yandex_compute_instance.vm[1] fhmdrcnroacuq4abb9i5  
+
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/a6500e50-720f-4c4a-a649-ff705dbfd237)  
+
 
 
 ---
