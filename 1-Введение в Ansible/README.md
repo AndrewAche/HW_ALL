@@ -30,6 +30,8 @@
 
 ***Решение:***  
 
+Подняты 2 машины:   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e547e513-d9c1-4d98-aa03-812a03f01fd6)
 
 
 ---
@@ -40,6 +42,9 @@
 
 ***Решение:***  
 
+Команда: ansible-playbook -i inventory/prod.yml site.yml  
+Не сработало (ошибка):  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/566d9b54-a199-4209-be2a-7247e49a53ac)
 
 
 ---
@@ -50,7 +55,7 @@
 
 ***Решение:***  
 
-
+Достаточно переименовать значения в поле: "some_fact" файлов "examp.yml" для "deb" и "el"  
 
 ---
 
@@ -60,7 +65,7 @@
 
 ***Решение:***  
 
-
+Не могу, см. ошибку в п. 4
 
 ---
 
