@@ -31,7 +31,11 @@
 ***Решение:***  
 
 Подняты 2 машины:   
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e547e513-d9c1-4d98-aa03-812a03f01fd6)
+```
+docker run --name ubuntu -d eclipse/ubuntu_python sleep 20000000
+docker run --name centos7 -d centos:7 sleep 10000000
+```
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/03a79f94-ea4a-4755-be8f-b3a88e33c907)  
 
 
 ---
@@ -42,9 +46,8 @@
 
 ***Решение:***  
 
-Команда: ansible-playbook -i inventory/prod.yml site.yml  
-Не сработало (ошибка):  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/566d9b54-a199-4209-be2a-7247e49a53ac)
+Команда: ansible-playbook -i inventory/prod.yml site.yml   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/31d60f2a-a07a-4444-a24a-bc6c1af5cb7b)
 
 
 ---
