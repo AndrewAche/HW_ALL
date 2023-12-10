@@ -68,7 +68,7 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
-Не могу, см. ошибку в п. 4
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ebe8dd40-5451-4c65-95d5-f36dc2347935)  
 
 ---
 
@@ -78,7 +78,7 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/1a3e7305-bc10-459a-b1ee-15dcdb1aa057)
 
 ---
 
@@ -88,7 +88,7 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/1d219e09-6b8b-47e0-b6f0-33c706dc870a)
 
 ---
 
@@ -98,7 +98,7 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5bc0fb3d-fedc-4748-a9ca-8e55784dbbe3)
 
 ---
 
@@ -108,6 +108,7 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/01ce1299-78fa-40e9-84c1-2e53d152cd8c)
 
 
 ---
@@ -118,19 +119,11 @@ docker run --name centos7 -d centos:7 sleep 10000000
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d5ff5c4c-1a46-4647-9285-40e0f32ade61)
 
 
 ---
 
-### Задание 1.12
-
-12. Заполните `README.md` ответами на вопросы. Сделайте `git push` в ветку `master`. В ответе отправьте ссылку на ваш открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
-
-***Решение:***  
-
-
-
----
 
 
 
