@@ -6,6 +6,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/097c0319-ee3b-4c93-ba6e-e9550dbaf851)
 
 
 ---
