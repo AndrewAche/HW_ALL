@@ -6,7 +6,7 @@
 
 ***Решение:***  
 
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/097c0319-ee3b-4c93-ba6e-e9550dbaf851)
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d31d7771-4981-4445-877e-3ba21e56c03d)
 
 
 ---
@@ -17,28 +17,18 @@
 
 ***Решение:***  
 
-
+Получившийся Playbook прилагаю в файле `site.yml`  
 
 ---
 
 ### Задание 1.3
 
 3. При создании tasks рекомендую использовать модули: `get_url`, `template`, `unarchive`, `file`.
-
-***Решение:***  
-
-
-
 ---
 
 ### Задание 1.4
 
 4. Tasks должны: скачать дистрибутив нужной версии, выполнить распаковку в выбранную директорию, установить vector.
-
-***Решение:***  
-
-
-
 ---
 
 ### Задание 1.5
@@ -47,6 +37,8 @@
 
 ***Решение:***  
 
+Ошибок не возникло:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/1f0f716d-6705-46e4-8d08-a4167175886c)
 
 
 ---
@@ -57,6 +49,8 @@
 
 ***Решение:***  
 
+Запустил `sudo ansible-playbook site.yml -i inventory/prod.yml --check`, получил ошибку:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ce4ea5ef-a3b3-4178-b288-ec70a7808ff2)  
 
 
 ---
@@ -66,7 +60,8 @@
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
 ***Решение:***  
-
+Ничего не изменилось:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/057a0ab3-05e3-4c4c-a942-cef378053c2a)
 
 
 ---
