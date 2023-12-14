@@ -49,9 +49,9 @@
 
 ***Решение:***  
 
-Запустил `sudo ansible-playbook site.yml -i inventory/prod.yml --check`, получил ошибку:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ce4ea5ef-a3b3-4178-b288-ec70a7808ff2)  
-
+Новая проблема - не получается выполнить таску по установке clickhouse, получил ошибку, что пакет отсутвует, хотя вот он есть, скачен:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/dfc60605-2145-4806-a07f-48413f975ef9)  
+Может дело в том, что мне расширение не подходит?  
 
 ---
 
@@ -60,8 +60,6 @@
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
 ***Решение:***  
-Ничего не изменилось:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/057a0ab3-05e3-4c4c-a942-cef378053c2a)
 
 
 ---
