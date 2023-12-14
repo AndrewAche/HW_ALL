@@ -4,26 +4,32 @@
   handlers:
     - name: Start clickhouse service
       become: true
+      become_method: sudo
       ansible.builtin.service:
         name: clickhouse-server
         state: restarted
   tasks:
     - block:
         - name: Get clickhouse distrib
+          become: true
+          become_method: sudo
           ansible.builtin.get_url:
-            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.noarch.rpm"
+            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.x86_64.rpm"
             dest: "./{{ item }}-{{ clickhouse_version }}.rpm"
           with_items: "{{ clickhouse_packages }}"
       rescue:
         - name: Get clickhouse distrib
+          become: true
+          become_method: sudo
           ansible.builtin.get_url:
             url: "https://packages.clickhouse.com/rpm/stable/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm"
             dest: "./clickhouse-common-static-{{ clickhouse_version }}.rpm"
     - name: Install clickhouse packages
       become: true
-      ansible.builtin.yum:
+      become_method: sudo
+      ansible.builtin.apt:
         name:
-          - clickhouse-common-static-{{ clickhouse_version }}.rpm
+          - clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm
           - clickhouse-client-{{ clickhouse_version }}.rpm
           - clickhouse-server-{{ clickhouse_version }}.rpm
       notify: Start clickhouse service
@@ -41,6 +47,7 @@
   handlers:
     - name: Restart vector service
       become: true
+      become_method: sudo
       ansible.builtin.service:
         name: vector
         state: restarted
@@ -65,4 +72,3 @@
         group: root
         mode: '0600'
       notify: Restart vector service
-      
