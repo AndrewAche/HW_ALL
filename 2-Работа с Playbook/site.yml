@@ -14,7 +14,7 @@
           become: true
           become_method: sudo
           ansible.builtin.get_url:
-            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.rpm"
+            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.x86_64.rpm"
             dest: "./{{ item }}-{{ clickhouse_version }}.rpm"
           with_items: "{{ clickhouse_packages }}"
       rescue:
@@ -29,7 +29,7 @@
       become_method: sudo
       ansible.builtin.apt:
         name:
-          - clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm
+          - clickhouse-common-static-{{ clickhouse_version }}.rpm
           - clickhouse-client-{{ clickhouse_version }}.rpm
           - clickhouse-server-{{ clickhouse_version }}.rpm
       notify: Start clickhouse service
