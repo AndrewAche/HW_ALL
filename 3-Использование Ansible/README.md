@@ -20,7 +20,7 @@
 3. Tasks должны: скачать статику LightHouse, установить Nginx или любой другой веб-сервер, настроить его конфиг для открытия LightHouse, запустить веб-сервер.
 
 ***Решение:***  
-
+[site.yml](https://github.com/AndrewAche/HW_ALL/blob/main/3-Использование%20Ansible/site.yml)
 
 
 ---
