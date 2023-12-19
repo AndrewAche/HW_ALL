@@ -1,0 +1,14 @@
+---
+
+clickhouse:
+  hosts:
+    acheusov1:
+      ansible_host: 130.193.50.244
+vector:
+  hosts:
+    acheusov2:
+      ansible_host: 51.250.71.152
+lighthouse:
+  hosts:
+    acheusov3:
+      ansible_host: 130.193.49.167
