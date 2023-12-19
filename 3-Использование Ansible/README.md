@@ -5,7 +5,7 @@
 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает LightHouse.
 
 ***Решение:***  
-
+[site.yml](https://github.com/AndrewAche/HW_ALL/blob/main/3-Использование%20Ansible/site.yml)
 
 
 ---
