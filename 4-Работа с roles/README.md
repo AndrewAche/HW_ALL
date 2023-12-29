@@ -27,7 +27,6 @@
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/31e5ae34-5c95-4cb1-ad24-6085379a349e)
 
 
-
 ---
 
 ### Задание 1.3
@@ -35,7 +34,8 @@
 3. Создайте новый каталог с ролью при помощи `ansible-galaxy role init vector-role`.
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b49a2fec-2921-47c1-810d-75f5017d814a)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ae2df07f-50f4-4960-9790-a46e9554cbc1)
 
 
 ---
@@ -45,6 +45,10 @@
 4. На основе tasks из старого playbook заполните новую role. Разнесите переменные между `vars` и `default`. 
 
 ***Решение:***  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/c568e276-b666-4f57-b33a-e29b17955578)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/8c56e03b-a422-435b-92a5-d3073b92e126)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5cd4909f-b18a-4577-a815-389165dba1cf)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/8cfbfdc2-8a86-462c-8e7b-1534dfdf960b)  
 
 
 
@@ -53,8 +57,6 @@
 ### Задание 1.5
 
 5. Перенести нужные шаблоны конфигов в `templates`.
-
-***Решение:***  
 
 
 
@@ -65,7 +67,8 @@
 6.  Опишите в `README.md` обе роли и их параметры. Пример качественной документации ansible role [по ссылке](https://github.com/cloudalchemy/ansible-prometheus).
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ce0041bf-294f-417e-a8b0-24e230aa6446)  
+По LightHouse выполнено аналогично.
 
 
 ---
@@ -75,7 +78,7 @@
 7. Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
 
 ***Решение:***  
-
+Выполнено аналогично  Vector.
 
 
 ---
