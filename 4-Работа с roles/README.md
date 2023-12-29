@@ -13,7 +13,7 @@
    ```
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/6472bf58-3190-4243-96e7-10790666a15c)
 
 
 ---
@@ -23,6 +23,8 @@
 2. При помощи `ansible-galaxy` скачайте себе эту роль.
 
 ***Решение:***  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d86cfbbc-4a85-419e-a581-366cc489e003)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/31e5ae34-5c95-4cb1-ad24-6085379a349e)
 
 
 
