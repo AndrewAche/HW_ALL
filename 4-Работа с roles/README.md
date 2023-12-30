@@ -88,9 +88,9 @@
 8. Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в `requirements.yml` в playbook.
 
 ***Решение:***  
-[Vector](https://github.com/AndrewAche/HW_ALL.git)
-[Lighthouse](https://github.com/AndrewAche/Ansible-LightHouse-role.git)
-[requirements.yml](https://github.com/AndrewAche/HW_ALL/blob/main/4-Работа%20с%20roles/requirements.yml)
+[Vector](https://github.com/AndrewAche/HW_ALL.git)  
+[Lighthouse](https://github.com/AndrewAche/Ansible-LightHouse-role.git)  
+[requirements.yml](https://github.com/AndrewAche/HW_ALL/blob/main/4-Работа%20с%20roles/requirements.yml)  
 
 
 ---
