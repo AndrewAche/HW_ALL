@@ -100,7 +100,7 @@
 9. Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения `roles` с `tasks`.
 
 ***Решение:***  
-
+[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/4-Работа%20с%20roles/site2.yml)
 
 
 ---
@@ -110,7 +110,7 @@
 10. Выложите playbook в репозиторий.
 
 ***Решение:***  
-
+[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/4-Работа%20с%20roles/site2.yml)
 
 
 ---
@@ -120,7 +120,9 @@
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 
 ***Решение:***  
-
+[Vector](https://github.com/AndrewAche/HW_ALL.git)  
+[Lighthouse](https://github.com/AndrewAche/Ansible-LightHouse-role.git)  
+[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/4-Работа%20с%20roles/site2.yml)  
 
 
 ---
