@@ -1,0 +1,27 @@
+---
+- name: Ping
+  tags: [ping]
+  hosts:
+    - centos7
+    - ubuntu
+    - localhost
+  tasks:
+    - name: Check availability servers
+      ping:
+
+
+- name: Install Clickhouse
+  hosts: centos7
+  roles: 
+   - clickhouse
+
+
+- name: Install Vector
+  hosts: ubuntu
+  roles:
+   - vector-role
+
+- name: Install lighthouse
+  hosts: localhost
+  roles:
+   - LightHouse-role
