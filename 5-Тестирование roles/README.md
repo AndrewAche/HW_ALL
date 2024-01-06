@@ -7,6 +7,10 @@
 1. Запустите  `molecule test -s centos_7` внутри корневой директории clickhouse-role, посмотрите на вывод команды. Данная команда может отработать с ошибками, это нормально. Наша цель - посмотреть как другие в реальном мире используют молекулу.
 
 ***Решение:***  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d78cd87f-634d-45bf-a0c1-fa146272e46c)  
+
+После запуска `molecule test -s centos_7` результат получился совсем плачевным)   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/45915469-7a21-4c98-bfd1-3aabb2ba0b00)
 
 
 
