@@ -13,7 +13,6 @@
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/45915469-7a21-4c98-bfd1-3aabb2ba0b00)
 
 
-
 ---
 
 ### Задание 1.2
@@ -21,7 +20,8 @@
 2. Перейдите в каталог с ролью vector-role и создайте сценарий тестирования по умолчанию при помощи `molecule init scenario --driver-name docker`.
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/7c581ee0-ca89-4f91-8d17-c899f006bf07)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/24dd76a5-742d-4089-b38e-f8eab075bace)  
 
 
 ---
@@ -31,7 +31,8 @@
 3. Добавьте несколько разных дистрибутивов (centos:8, ubuntu:latest) для инстансов и протестируйте роль, исправьте найденные ошибки, если они есть.
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/fbbd77ac-b2e5-4eae-a610-2f86bca06d7c)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/80e810b3-3595-430b-b64b-d63be1962f4e)
 
 
 
