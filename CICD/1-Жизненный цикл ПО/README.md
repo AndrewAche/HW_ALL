@@ -57,7 +57,7 @@
 5. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
 
 ***Решение:***  
-
+[workflow](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/1-Жизненный%20цикл%20ПО/AN_%20Default%20ESM%20workflow%20for%20Jira%20Service%20Management.xml)
 
 
 ---
