@@ -17,7 +17,7 @@
 
 ***Решение:***  
 
-Получившийся Playbook прилагаю в файле `site.yml`  
+Получившийся Playbook прилагаю в файле [site.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site.yml)  
 
 ---
 
