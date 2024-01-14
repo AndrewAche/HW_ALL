@@ -17,7 +17,7 @@
 
 ***Решение:***  
 
-Получившийся Playbook прилагаю в файле [site.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site.yml)  
+Получившийся Playbook прилагаю в файле [site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site2.yml)
 
 ---
 
@@ -89,9 +89,9 @@
 
 ***Решение:***  
 
-[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site2.yml)
-[vars.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/vars.yml)
-[prod.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/prod.yml)
+[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site2.yml)  
+[vars.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/vars.yml)  
+[prod.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/prod.yml)  
 
 
 ---
