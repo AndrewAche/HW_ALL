@@ -48,8 +48,10 @@
 6.  Попробуйте запустить playbook на этом окружении с флагом `--check`.
 
 ***Решение:***  
- 
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/fe27f656-27df-42d4-802c-c635d13d714b)  
+Обновление от 14.01.24: переделал полностью Плейбук под Дебиан - в этом и состоял корень всех проблем с домашним заданием :)  
+В ИТОГЕ:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/de1ac73f-8b9a-4a7b-b7a9-f489f001f34d)  
+
 
 ---
 
@@ -58,6 +60,8 @@
 7. Запустите playbook на `prod.yml` окружении с флагом `--diff`. Убедитесь, что изменения на системе произведены.
 
 ***Решение:***  
+Изменения были произведены, просто выполнял много раз перед тем как сделать скрин, поэтому "changed=0"  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/29195648-5dab-4796-8ada-e4004be8ad23)
 
 
 ---
@@ -67,7 +71,7 @@
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/1be74756-0f8e-4346-a3f6-885922ce95aa)
 
 
 ---
@@ -75,9 +79,6 @@
 ### Задание 1.9
 
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги. Пример качественной документации ansible playbook по [ссылке](https://github.com/opensearch-project/ansible-playbook). Так же приложите скриншоты выполнения заданий №5-8
-
-***Решение:***  
-
 
 
 ---
@@ -88,6 +89,9 @@
 
 ***Решение:***  
 
+[site2.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/site2.yml)
+[vars.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/vars.yml)
+[prod.yml](https://github.com/AndrewAche/HW_ALL/blob/main/2-Работа%20с%20Playbook/prod.yml)
 
 
 ---
