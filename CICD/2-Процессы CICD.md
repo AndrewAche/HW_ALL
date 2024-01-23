@@ -1,5 +1,15 @@
 # [Домашнее задание](https://github.com/netology-code/mnt-homeworks/blob/MNT-video/09-ci-03-cicd/README.md) к занятию  "Процессы CICD" - `Ачеусов Андрей`
 
+## Предварительные настройки  
+Playbook отработал успешно:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/8a2fb9a9-3cfa-44ea-b9aa-7d9db63e76e8)  
+SonarQube:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/353fb793-c380-4ac7-bd64-998f279fcca7)  
+Nexus:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/f61f8c06-d375-4ef2-9ca9-01a36192839e)  
+
+
+
 ## SonarQube
 
 ### Задание 1
