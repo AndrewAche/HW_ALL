@@ -17,6 +17,7 @@
 7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.   
 
 ***Решение:***  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/45717fcd-cb36-4c92-9bbf-4b20dfc34a82)
 
 
 
