@@ -30,10 +30,10 @@ $ docker build -t $CI_REGISTRY/acheusov/netology-11/python-api:latest .
 unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /builds/acheusov/netology-example3/Dockerfile: no such file or directory
 Cleaning up project directory and file based variables
 ERROR: Job failed: exit code 1
+```
 
 [gitlab-ci.yml]()
-[Dockerfile]()
-```
+[Dockerfile](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/Dockerfile)
 
 
 
