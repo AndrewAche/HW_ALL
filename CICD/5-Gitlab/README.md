@@ -17,9 +17,23 @@
 7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.   
 
 ***Решение:***  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/45717fcd-cb36-4c92-9bbf-4b20dfc34a82)
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/45717fcd-cb36-4c92-9bbf-4b20dfc34a82)  
+Затем всё падает в ошибку:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/f5105f7b-ea29-482f-b4b9-29656b228a51)
+```
+Checking out ac48f7ef as detached HEAD (ref is main)...
 
+Skipping Git submodules setup
+Executing "step_script" stage of the job script
+Using docker image sha256:1588477122de4fdfe9fcb9ddeeee6ac6b93e9e05a65c68a6e22add0a98b8e0fe for docker:20.10.5 with digest docker@sha256:7ed427295687586039ff3433bb9b4419c5cf1e6294025dadf7641126665a78f5 ...
+$ docker build -t $CI_REGISTRY/acheusov/netology-11/python-api:latest .
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /builds/acheusov/netology-example3/Dockerfile: no such file or directory
+Cleaning up project directory and file based variables
+ERROR: Job failed: exit code 1
 
+[gitlab-ci.yml]()
+[Dockerfile]()
+```
 
 ### Product Owner
 
