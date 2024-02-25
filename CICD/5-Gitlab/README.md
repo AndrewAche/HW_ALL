@@ -32,7 +32,7 @@ Cleaning up project directory and file based variables
 ERROR: Job failed: exit code 1
 ```
 
-[gitlab-ci.yml]()
+[gitlab-ci.yml](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/gitlab-ci.yml)
 [Dockerfile](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/Dockerfile)
 
 
