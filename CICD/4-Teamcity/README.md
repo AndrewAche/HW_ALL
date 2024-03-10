@@ -4,6 +4,8 @@
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b1617d56-fd49-4007-9043-7f73f3cb740a)  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b9b65153-e584-471a-a86a-636ae5d22556)   
 
+Агент авторизован:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/61266547-85bf-4aab-8203-ecaa41bc61c8)  
 
 
 
