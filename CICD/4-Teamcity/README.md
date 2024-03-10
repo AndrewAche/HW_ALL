@@ -1,5 +1,11 @@
 # [Домашнее задание](https://github.com/netology-code/mnt-homeworks/blob/MNT-video/09-ci-05-teamcity/README.md) к занятию  "Teamcity" - `Ачеусов Андрей`
 
+### Подготовка
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b1617d56-fd49-4007-9043-7f73f3cb740a)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b9b65153-e584-471a-a86a-636ae5d22556)   
+
+
+
 
 
 ### Задание 1
