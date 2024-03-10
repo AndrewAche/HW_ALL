@@ -28,6 +28,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/a4bacf84-576d-4031-b884-13fb91e2aa27)
 
 
 ---
@@ -39,6 +40,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/d2170845-0401-4227-9f7f-9622e742efc9)
 
 
 ---
@@ -50,6 +52,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/6579c371-018f-4ed8-b876-de5ca64d138e)
 
 
 ---
@@ -61,6 +64,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/a88ef93a-1529-4e66-a820-e59ae3cad439)
 
 
 ---
@@ -69,10 +73,6 @@
 ### Задание 6
 
 6. В pom.xml необходимо поменять ссылки на репозиторий и nexus.
-
-***Решение:***  
-
-
 
 ---
 
@@ -83,6 +83,9 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2514b1cc-a899-4633-b4ff-800e25f7ac75)  
+В моем случае версия 0.0.2:  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/43b4ef0c-d1b9-49cc-a422-0c43c7df4d50)  
 
 
 ---
@@ -206,5 +209,16 @@
 ***Решение:***  
 
 
+
+---
+
+
+### Задание 19
+
+19. В ответе пришлите ссылку на репозиторий.
+
+***Решение:***  
+
+https://github.com/AndrewAche/example-teamcity.git
 
 ---
