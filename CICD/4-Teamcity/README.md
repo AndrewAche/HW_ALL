@@ -97,6 +97,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/58bfb905-5747-4bb6-a33c-700c20499b87)
 
 
 ---
