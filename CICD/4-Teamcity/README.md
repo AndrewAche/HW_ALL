@@ -16,6 +16,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/36df5f33-0741-4d7f-bcbf-92c1a90a0f90)
 
 
 ---
