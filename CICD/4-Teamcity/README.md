@@ -109,6 +109,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ae931f64-a69a-419d-bcd0-17fe7a7b9bdc)
 
 
 ---
@@ -120,6 +121,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/78898e2b-d052-44a2-98ba-7c7fabfc1034)  
 
 
 ---
@@ -131,6 +133,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/3c1f553c-fc22-4c71-a468-f87fed9fabce)
 
 
 ---
@@ -139,10 +142,6 @@
 ### Задание 12
 
 12. Сделайте push всех изменений в новую ветку репозитория.
-
-***Решение:***  
-
-
 
 ---
 
