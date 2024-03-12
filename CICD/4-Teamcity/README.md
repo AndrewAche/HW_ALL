@@ -152,6 +152,10 @@
 
 ***Решение:***  
 
+Изначаль выпала ошибка (но тесты запустились):  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b1c9ef09-5d0a-434d-b8a3-0fe8d0da54a2)  
+В дальнейшем я исправил ошибку (была в коде):  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/906c4a18-831b-4c10-a0fa-3ed593250970)  
 
 
 ---
@@ -160,10 +164,6 @@
 ### Задание 14
 
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
-
-***Решение:***  
-
-
 
 ---
 
@@ -174,6 +174,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/5dc096cf-4b00-4c20-bd4a-b62f0525d8e9)
 
 
 ---
