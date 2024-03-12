@@ -186,6 +186,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/90f2980e-92c7-4e15-b0b3-eda68d5a13f7)
 
 
 ---
@@ -198,6 +199,8 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/b00b6390-1928-4763-999f-10c330a266b8)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/ad76d90c-e06f-4b59-8004-c8017e19e4e7)  
 
 
 ---
@@ -206,10 +209,6 @@
 ### Задание 18
 
 18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
-
-***Решение:***  
-
-
 
 ---
 
