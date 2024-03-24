@@ -19,7 +19,8 @@
 ***Решение:***  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/35e8cd6d-d19c-411a-81fb-6f6f97767022)    
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/14a701b9-e8a6-413f-8e7a-721e94845832)  
-[image](acheusov.gitlab.yandexcloud.net:5050/acheusov/netology-new1/python-api:latest)  
+
+Ссылка на image: acheusov.gitlab.yandexcloud.net:5050/acheusov/netology-new1/python-api:latest  
 
 
 [gitlab-ci.yml](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/gitlab-ci.yml)  
