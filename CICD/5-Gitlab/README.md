@@ -31,15 +31,6 @@
 2. Текст с `{ "message": "Already started" }` на `{ "message": "Running"}`.
 3. Issue поставить label: feature.
 
-***Решение:***  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/95a94521-8fac-479f-b91d-99bdefd345c0)  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/c6c3eafe-3f03-46a7-8ae1-55276473ea67)  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9c8e2f09-8587-47cc-a0e2-385c9b3a0562)  
-
-
-[Issue](https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1/-/issues/2) 
-
-
 ### Developer
 
 Пришёл новый Issue на доработку, вам нужно:
@@ -48,7 +39,16 @@
 2. Внести изменения по тексту из задания.
 3. Подготовить Merge Request, влить необходимые изменения в `master`, проверить, что сборка прошла успешно.
 
+
 ***Решение:***  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/95a94521-8fac-479f-b91d-99bdefd345c0)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/c6c3eafe-3f03-46a7-8ae1-55276473ea67)   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9c8e2f09-8587-47cc-a0e2-385c9b3a0562)   
+
+
+[Issue](https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1/-/issues/2)   
+[Merge request](https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1/-/merge_requests/2)  
+
 
 
 ### Tester
