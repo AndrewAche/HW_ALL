@@ -43,6 +43,7 @@
 ***Решение:***  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/95a94521-8fac-479f-b91d-99bdefd345c0)  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/c6c3eafe-3f03-46a7-8ae1-55276473ea67)   
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/6fa96945-575b-4465-b746-7e82d2a9e06f)  
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9c8e2f09-8587-47cc-a0e2-385c9b3a0562)   
 
 
@@ -59,7 +60,8 @@
 2. Закрыть Issue с комментарием об успешности прохождения, указав желаемый результат и фактически достигнутый.
 
 ***Решение:***  
-
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9705bc97-df43-473c-b658-e34488e00cf4)  
+[Closed Issue](https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1/-/issues/2)   
 
 
 [gitlab-ci.yml](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/gitlab-ci.yml)  
