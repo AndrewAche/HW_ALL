@@ -60,10 +60,16 @@
 2. Закрыть Issue с комментарием об успешности прохождения, указав желаемый результат и фактически достигнутый.
 
 ***Решение:***  
+```bash
+$ curl localhost:5290/get_info
+{"version": 3, "method": "GET", "message": "Running"}
+```
 ![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/9705bc97-df43-473c-b658-e34488e00cf4)  
 [Closed Issue](https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1/-/issues/2)   
 
-
+   
+   
+  
 [gitlab-ci.yml](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/gitlab-ci.yml)  
 [Dockerfile](https://github.com/AndrewAche/HW_ALL/blob/main/CICD/5-Gitlab/Dockerfile)  
 Ссылка на проект: https://acheusov.gitlab.yandexcloud.net/acheusov/netology-new1
