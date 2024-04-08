@@ -18,10 +18,10 @@
   
 - Память (RAM) Utilization (Использование памяти - usage)
    
-- диск (Disk Utilization):
--- объем данных, скорость записи/чтения, количество inodes  
--- Disk IO read/write - операции ввода/вывода в секунду  
--- Disk Activity read/write - объем данных в единицу времени  
+- диск (Disk Utilization):  
+- объем данных, скорость записи/чтения, количество inodes  
+- Disk IO read/write - операции ввода/вывода в секунду  
+- Disk Activity read/write - объем данных в единицу времени  
   
 - Загрузка сети (Network Throughput):
   
