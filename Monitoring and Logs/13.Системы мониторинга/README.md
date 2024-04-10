@@ -122,11 +122,11 @@ Pull-модели:
 
 ***Ответ:***  
 
-    - Prometheus - 
-    - TICK - 
-    - Zabbix - 
-    - VictoriaMetrics - 
-    - Nagios - 
+    - Prometheus - pull
+    - TICK - push
+    - Zabbix - pull, push
+    - VictoriaMetrics - push
+    - Nagios - pull
 
 
 ---
