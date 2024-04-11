@@ -10,6 +10,7 @@
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/851741ea-5a5a-4c88-9d91-f4181cec8714)
 
 
 ---
