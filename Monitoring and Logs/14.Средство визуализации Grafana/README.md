@@ -66,7 +66,9 @@ sum by(device) (node_filesystem_avail_bytes{fstype!="tmpfs"})
 
 ***Решение:***  
 
- 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/2b2eca7e-cbac-4366-b8e6-45b659245b31)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/25bc6070-58c9-47ec-8b4d-dc85ff916adf)  
+
 
 ---
 
