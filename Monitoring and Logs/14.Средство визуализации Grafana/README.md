@@ -80,7 +80,7 @@ sum by(device) (node_filesystem_avail_bytes{fstype!="tmpfs"})
 
 ***Решение:***  
 
-[Dashboard_Export.json]()
+[Dashboard_Export.json](https://github.com/AndrewAche/HW_ALL/blob/main/Monitoring%20and%20Logs/14.Средство%20визуализации%20Grafana/Dashboard_Export.json)
 
 ---
 
