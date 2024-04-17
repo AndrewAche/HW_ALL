@@ -80,7 +80,7 @@ sum by(device) (node_filesystem_avail_bytes{fstype!="tmpfs"})
 
 ***Решение:***  
 
-
+[Dashboard_Export.json]()
 
 ---
 
