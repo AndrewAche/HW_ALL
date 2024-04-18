@@ -141,11 +141,8 @@ Pull-модели:
 
 ***Решение:***  
 
-На целевой ВМ:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/a0a5f6bd-2c38-4557-b55c-8771f024fcbc)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/02fcc61e-b5df-48fb-9636-6f09a75403fb)
 
-На 2й ВМ:  
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/e7092073-b37a-4741-afe5-7e5bb947888c)  
 
 ---
 
