@@ -141,7 +141,7 @@ Pull-модели:
 
 ***Решение:***  
 
-![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/02fcc61e-b5df-48fb-9636-6f09a75403fb)
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/25056c1d-9b1a-45c9-a48a-2307ff89f5ae)  
 
 
 ---
@@ -160,6 +160,7 @@ Pull-модели:
 
 ***Решение:***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/fb8e0152-c7b1-4eae-a64f-d319592627b2)
 
 
 ---
