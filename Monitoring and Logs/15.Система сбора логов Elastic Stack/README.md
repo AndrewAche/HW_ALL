@@ -24,8 +24,10 @@ Filebeat следует сконфигурировать для отправки
 - docker-compose манифест (если вы не использовали директорию help);
 - ваши yml-конфигурации для стека (если вы не использовали директорию help).
 
-***Ответ:***  
+***Решение***  
 
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/0c6a1647-8758-4084-916a-fc2bcace0f9a)  
+![image](https://github.com/AndrewAche/HW_ALL/assets/121398221/f8ca1ba2-7644-4940-ae46-b6597b50cfd5)  
 
 
 ---
