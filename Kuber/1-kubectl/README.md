@@ -31,10 +31,10 @@
 ![image](https://github.com/user-attachments/assets/a11eaf75-1008-4fc5-8d34-4a1db4b1bd79)  
 
 2. Настроить локально подключение к кластеру.  
-
+![image](https://github.com/user-attachments/assets/ad7005e5-be7d-4da9-a884-e49d88822aa1)  
 
 3. Подключиться к дашборду с помощью port-forward.  
-
+![image](https://github.com/user-attachments/assets/13d57ffe-f34d-454c-85e6-0372348ab374)  
 
 
 ---
