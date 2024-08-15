@@ -1,4 +1,4 @@
-# [Домашнее задание](https://github.com/netology-code/kuber-homeworks/blob/main/1.1/1.1.md](https://github.com/netology-code/kuber-homeworks/blob/main/1.2/1.2.md) к занятию  "Kubernetes. Базовые объекты K8S" - `Ачеусов Андрей`
+# [Домашнее задание](https://github.com/netology-code/kuber-homeworks/blob/main/1.2/1.2.md) к занятию  "Kubernetes. Базовые объекты K8S" - `Ачеусов Андрей`
 
 
 ### Задание 1. Создать Pod с именем hello-world  
