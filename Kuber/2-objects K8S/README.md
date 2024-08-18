@@ -13,6 +13,10 @@
 
 3. Подключиться локально к Pod с помощью kubectl port-forward и вывести значение (curl или в браузере).  
  
+ОШИБКИ:  
+![image](https://github.com/user-attachments/assets/c51476cf-1799-4181-98af-43655f1b2ea0)  
+
+![image](https://github.com/user-attachments/assets/c0ceca52-66e9-4254-945a-8e1fc811409f)  
 
 
 ---
