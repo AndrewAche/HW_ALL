@@ -27,8 +27,8 @@
 
 
 5. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложений из п.1.  
-
-
+![image](https://github.com/user-attachments/assets/4401e6f4-b51c-40c2-98f9-e133953335ad)  
+![image](https://github.com/user-attachments/assets/6c9f6738-ecdb-47c5-930e-c568719b767f)  
 
 
 ---
@@ -39,9 +39,8 @@
 ***Решение:***  
 
 1. Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения.  
-
-
 2. Убедиться, что nginx не стартует. В качестве Init-контейнера взять busybox.  
+![image](https://github.com/user-attachments/assets/86a1512c-5996-4d0b-9183-76701a2a6c3b)  
 
 
 3. Создать и запустить Service. Убедиться, что Init запустился.  
