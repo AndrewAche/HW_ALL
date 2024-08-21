@@ -44,10 +44,12 @@
 
 
 3. Создать и запустить Service. Убедиться, что Init запустился.  
+![image](https://github.com/user-attachments/assets/0cca3195-0a96-4fb5-979e-392f7a3af3a3)  
+![image](https://github.com/user-attachments/assets/01df7ccd-6618-490f-9244-4b2c673d2c6a)  
 
 
 4. Продемонстрировать состояние пода до и после запуска сервиса.  
-
+![image](https://github.com/user-attachments/assets/689ac0b0-a811-49f3-a0e8-6c7259298eb5)  
 
 
 ---
