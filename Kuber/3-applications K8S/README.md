@@ -6,7 +6,8 @@
 ***Решение:***  
 
 1. Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.  
-![image](https://github.com/user-attachments/assets/ec5e729c-5199-4eba-add9-722e8c871b9c)  
+![image](https://github.com/user-attachments/assets/f9d5a15e-136e-4ae7-bbcf-f9e7d27c44f2)  
+
 ![image](https://github.com/user-attachments/assets/14601ee4-2f8d-4afd-89cd-af1d99359bb7)  
 
 
