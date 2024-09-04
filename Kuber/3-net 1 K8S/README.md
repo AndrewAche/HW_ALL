@@ -30,13 +30,15 @@
 ***Решение:***  
 
 1. Создать отдельный Service приложения из Задания 1 с возможностью доступа снаружи кластера к nginx, используя тип NodePort.  
+![image](https://github.com/user-attachments/assets/b81152be-0640-4792-9015-e6e7c90ae0bb)   
 
 
 2. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.  
+![image](https://github.com/user-attachments/assets/579cf99b-61f8-4128-9bd4-0dcc59d095ce)   
 
 
 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.  
-
+Манифест [service](https://github.com/AndrewAche/HW_ALL/tree/main/Kuber/3-net%201%20K8S)
 
 
 ---
