@@ -13,17 +13,14 @@
 
 
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.  
+4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.  
+5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.  
 ![image](https://github.com/user-attachments/assets/ec0d4d34-5a33-4230-87a9-737327920944)  
 ![image](https://github.com/user-attachments/assets/82643d9a-875b-4635-ba35-958c27e05f3f)  
 
+Манифест [deployment](https://github.com/AndrewAche/HW_ALL/blob/main/Kuber/3-net%201%20K8S/deployment3.yaml)
 
-4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.  
-
-
-5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.  
-
-
-
+Манифест [service](https://github.com/AndrewAche/HW_ALL/blob/main/Kuber/3-net%201%20K8S/service.yaml)
 
 ---
 
