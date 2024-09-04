@@ -7,13 +7,14 @@
 
 1. Создать Deployment приложения, состоящего из двух контейнеров (nginx и multitool), с количеством реплик 3 шт.  
 2. Создать Service, который обеспечит доступ внутри кластера до контейнеров приложения из п.1 по порту 9001 — nginx 80, по 9002 — multitool 8080.  
-![image](https://github.com/user-attachments/assets/0878e2a4-0c76-4f5e-8da2-658476dabb2a)  
-![image](https://github.com/user-attachments/assets/26b99139-b92e-4eff-9fd9-4a9b38d92be5)  
-![image](https://github.com/user-attachments/assets/9265308e-1e6d-44fe-a68c-52cb8a59e4d3)  
+![image](https://github.com/user-attachments/assets/5960300b-aa53-42e4-a24a-5649213d8489)  
+![image](https://github.com/user-attachments/assets/87153f20-5ca6-4165-ac94-3120ec39dac2)  
+
 
 
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью curl, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.  
-![image](https://github.com/user-attachments/assets/785b92da-a109-437e-ae72-d9314b71d469)   
+![image](https://github.com/user-attachments/assets/ec0d4d34-5a33-4230-87a9-737327920944)  
+![image](https://github.com/user-attachments/assets/82643d9a-875b-4635-ba35-958c27e05f3f)  
 
 
 4. Продемонстрировать доступ с помощью curl по доменному имени сервиса.  
