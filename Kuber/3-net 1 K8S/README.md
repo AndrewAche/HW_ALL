@@ -38,7 +38,7 @@
 
 
 3. Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.  
-Манифест [service](https://github.com/AndrewAche/HW_ALL/tree/main/Kuber/3-net%201%20K8S)
+Манифест [service](https://github.com/AndrewAche/HW_ALL/blob/main/Kuber/3-net%201%20K8S/service1_2.yaml)
 
 
 ---
