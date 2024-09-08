@@ -28,13 +28,17 @@
 
 ***Решение:***  
 
-1. Включить Ingress-controller в MicroK8S.
+1. Включить Ingress-controller в MicroK8S.  
+![image](https://github.com/user-attachments/assets/e4bf7f44-b803-4418-bfe7-21736f03265f)  
 
-2. Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.
+2. Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.  
+![image](https://github.com/user-attachments/assets/ddfe141f-d7d9-4551-a6da-841e394b0d4a)  
 
-3. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
+3. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.  
+![image](https://github.com/user-attachments/assets/5a29a92d-6b80-4984-91d1-618e39eb4dd9)  
+![image](https://github.com/user-attachments/assets/6a0c7f31-0743-4794-bb24-941c0485768f)  
 
-4. Предоставить манифесты и скриншоты или вывод команды п.2.
-
+4. Предоставить манифесты и скриншоты или вывод команды п.2.  
+См. выше   
 
 ---
