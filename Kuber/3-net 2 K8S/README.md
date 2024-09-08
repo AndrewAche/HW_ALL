@@ -36,7 +36,8 @@
 
 3. Продемонстрировать доступ с помощью браузера или curl с локального компьютера.  
 ![image](https://github.com/user-attachments/assets/5a29a92d-6b80-4984-91d1-618e39eb4dd9)  
-![image](https://github.com/user-attachments/assets/6a0c7f31-0743-4794-bb24-941c0485768f)  
+![image](https://github.com/user-attachments/assets/3bd4edbb-a115-4931-9f12-964b415108d0)  
+
 
 4. Предоставить манифесты и скриншоты или вывод команды п.2.  
 См. выше   
