@@ -28,10 +28,11 @@
 ***Решение:***  
 
 1. Создать DaemonSet приложения, состоящего из multitool.  
-
 2. Обеспечить возможность чтения файла /var/log/syslog кластера MicroK8S.  
+![image](https://github.com/user-attachments/assets/1b1524bc-6141-437d-9db5-d25206ee320b)  
 
 3. Продемонстрировать возможность чтения файла изнутри пода.  
+![image](https://github.com/user-attachments/assets/8b1d60d8-6fae-45f6-b006-eb127e58f257)  
 
 4. Предоставить манифесты Deployment, а также скриншоты или вывод команды из п. 2.  
 См. выше  
