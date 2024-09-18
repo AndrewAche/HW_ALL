@@ -13,12 +13,20 @@
 ![image](https://github.com/user-attachments/assets/7f5b2f7b-7ea2-46fa-8cbc-2d3a34d3224b)  
 
 4. Продемонстрировать, что multitool может читать файл, в который busybox пишет каждые пять секунд в общей директории.  
+![image](https://github.com/user-attachments/assets/cb4e1850-1a69-403c-847e-45403d1f591b)  
 
 5. Удалить Deployment и PVC. Продемонстрировать, что после этого произошло с PV. Пояснить, почему.  
+![image](https://github.com/user-attachments/assets/ab84cb99-d5a1-4462-9a70-6cf91e2db702)  
+![image](https://github.com/user-attachments/assets/32abf462-1eeb-4618-bf5e-df0b4f326985)  
+Файл сохранился на локальном диске ноды.  
 
 6. Продемонстрировать, что файл сохранился на локальном диске ноды. Удалить PV. Продемонстрировать что произошло с файлом после удаления PV. Пояснить, почему.  
+![image](https://github.com/user-attachments/assets/7b247bbb-94c8-4a43-a896-4fd9dfdd704a)  
+![image](https://github.com/user-attachments/assets/4b4da6da-e365-4e5d-a414-f97d2dc1b639)  
+![image](https://github.com/user-attachments/assets/9d466196-ec31-4c8c-a9ef-9d18093fe275)  
+Файл остался. Также при конфигурировании pv использовался режим ReclaimPolicy: Retain при котором "Retain - после удаления PV ресурсы из внешних провайдеров автоматически не удаляются". Даже после удаления pv файлы также останутся.  
 
-7. Предоставить манифесты, а также скриншоты или вывод необходимых команд.  
+8. Предоставить манифесты, а также скриншоты или вывод необходимых команд.  
 См. выше  
 
 ---
