@@ -6,7 +6,8 @@
 ***Решение:***  
 
 1. Создать Deployment приложения, состоящего из контейнеров nginx и multitool.  
-
+![image](https://github.com/user-attachments/assets/d5741de3-7107-4cd6-81c7-2eaeac32b80f)  
+![image](https://github.com/user-attachments/assets/c0945a29-407b-4b58-bbff-0ff7e4d3dcdb)  
 
 2. Решить возникшую проблему с помощью ConfigMap.  
 
