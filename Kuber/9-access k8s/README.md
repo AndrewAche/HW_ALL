@@ -6,16 +6,17 @@
 ***Решение:***  
 
 1. Создайте и подпишите SSL-сертификат для подключения к кластеру.  
-![image](https://github.com/user-attachments/assets/c3ebb56e-d0d0-47f9-b62b-181ff2499aad)  
-![image](https://github.com/user-attachments/assets/8a46c0cb-a44c-4c52-a303-39c6c36010a7)  
+![image](https://github.com/user-attachments/assets/0a6e3432-8781-4e82-a80b-db6ea0544221)  
 
 2. Настройте конфигурационный файл kubectl для подключения.  
-![image](https://github.com/user-attachments/assets/9e3e871d-cb8a-4e93-846c-c28a7da1a9ed)  
+![image](https://github.com/user-attachments/assets/c7055c9e-b0d4-4d3a-917e-6e0683df583d)  
 
 3. Создайте роли и все необходимые настройки для пользователя.  
-
+![image](https://github.com/user-attachments/assets/5977982f-9bef-46fe-bb02-fdfa6a620d6c)  
+![image](https://github.com/user-attachments/assets/7d686116-9178-4c05-87ba-68765fd04e41)  
 
 4. Предусмотрите права пользователя. Пользователь может просматривать логи подов и их конфигурацию (kubectl logs pod <pod_id>, kubectl describe pod <pod_id>).  
+![image](https://github.com/user-attachments/assets/32661028-954a-487e-9ff3-70374040a8bc)  
 
 
 5. Предоставьте манифесты и скриншоты и/или вывод необходимых команд.  
