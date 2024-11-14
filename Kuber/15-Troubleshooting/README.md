@@ -13,6 +13,14 @@ kubectl apply -f https://raw.githubusercontent.com/netology-code/kuber-homeworks
 
 ***Решение:***  
 
+После запуска команды:  
+![image](https://github.com/user-attachments/assets/0b2f2f1f-4ff9-4a07-a47b-fd3c2cd65d5a)  
+Проблема в отсутствии namespaces, создаю их и запускаю заново:  
+![image](https://github.com/user-attachments/assets/160808cb-56fe-4646-898c-6137c6e4d39c)  
+![image](https://github.com/user-attachments/assets/410c3fc4-d8ff-4f70-8557-1b478a343953)  
+![image](https://github.com/user-attachments/assets/ca0a31ce-940d-4b54-b05a-15f02f4c9a85)  
+
+
 ```bash
 
 ```
