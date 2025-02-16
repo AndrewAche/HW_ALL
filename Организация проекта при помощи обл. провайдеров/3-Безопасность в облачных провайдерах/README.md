@@ -9,7 +9,7 @@
 
 [terraform]()
 
-[kms.tf]()
+[kms.tf](https://github.com/AndrewAche/HW_ALL/blob/main/Организация%20проекта%20при%20помощи%20обл.%20провайдеров/3-Безопасность%20в%20облачных%20провайдерах/kms.tf)
 
 root@acheusov2:/home/acheusov2/15.3_sertificat# terraform plan
 
@@ -81,7 +81,7 @@ Apply complete! Resources: 14 added, 0 changed, 0 destroyed.
 Outputs:
 
 external_load_balancer_ip = "158.160.165.187"
-root@baranovsa:/home/baranovsa/15.3_sertificat# 
+root@acheusov2:/home/acheusov2/15.3_sertificat# 
 
 
 ```
