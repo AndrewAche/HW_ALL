@@ -108,5 +108,7 @@ root@baranovsa:/home/baranovsa/15.3_sertificat#
 
 --- 
 
+![image](https://github.com/user-attachments/assets/1b75a34a-2f0b-4d93-9e0a-f436155f6a73)
+
 
 
