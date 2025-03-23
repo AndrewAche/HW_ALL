@@ -48,8 +48,13 @@
 2. Полученная конфигурация инфраструктуры является предварительной, поэтому в ходе дальнейшего выполнения задания возможны изменения.
 
 ### Решение
-1)  ![image](https://github.com/user-attachments/assets/af930acb-8d6e-42ff-a5fe-3f396b3de394)
-
+1.  
+![image](https://github.com/user-attachments/assets/af930acb-8d6e-42ff-a5fe-3f396b3de394)  
+![image](https://github.com/user-attachments/assets/60bfef52-4e80-4534-86c7-6353ad1140aa)  
+2.  
+![image](https://github.com/user-attachments/assets/8687d9ff-f686-415a-9b79-e15304e1765f)  
+![image](https://github.com/user-attachments/assets/2d48f210-11e7-4280-8d90-e06387b2e294)  
+3.  
 
 
 
