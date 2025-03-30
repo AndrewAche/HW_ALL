@@ -55,8 +55,71 @@
 ![image](https://github.com/user-attachments/assets/8687d9ff-f686-415a-9b79-e15304e1765f)  
 ![image](https://github.com/user-attachments/assets/2d48f210-11e7-4280-8d90-e06387b2e294)  
 3.  
+![image](https://github.com/user-attachments/assets/324ec9bb-290e-4053-b5eb-368239a2099c)  
+4.  
+![image](https://github.com/user-attachments/assets/42552216-e1c4-41ec-b8d4-ad9cdb842be1)  
+![image](https://github.com/user-attachments/assets/98de4658-47ca-4b22-aa3c-ac99b3781f9a)  
+5.  
+Могу выполнить команды terraform destroy и terraform apply без дополнительных ручных действий (Повторный прогон команды terraform apply):   
+ВНИМАНИЕ! Ошибка связана со 2-м неиспользуемым бакетом, по непонятной причине не могу его удалить. На выполнение задания не влияет  
+  
+```
+acheusov2@acheusov2:~/Diplom/cloud-terraform$ terraform apply -auto-approve
+yandex_storage_bucket.iam-bucket: Refreshing state... [id=acheusov.netology]
+yandex_vpc_network.subnet-zones: Refreshing state... [id=enp40f6286q064j6ijrh]
+yandex_iam_service_account.sa-terraform: Refreshing state... [id=ajedh5h66hppu9rs32de]
+yandex_resourcemanager_folder_iam_member.terraform-editor: Refreshing state... [id=b1g28u34etbvshh9gi63/editor/serviceAccount:ajedh5h66hppu9rs32de]
+yandex_iam_service_account_static_access_key.sa-static-key: Refreshing state... [id=ajedgoc5vnj0evqmaenh]
+yandex_vpc_subnet.subnet-zones[1]: Refreshing state... [id=e2l0h62ro5sujus6pl1e]
+yandex_vpc_subnet.subnet-zones[0]: Refreshing state... [id=e9bkde4ad36q2jhub0f1]
+yandex_vpc_subnet.subnet-zones[2]: Refreshing state... [id=fl8k7rvsuf91t2401lpo]
+yandex_storage_bucket.netology-bucket: Refreshing state... [id=acheusov-netology-bucket]
+yandex_storage_object.object-1: Refreshing state... [id=terraform.tfstate]
+local_file.backendConf: Refreshing state... [id=9dd206186be312c012416264c739760fd04df31e]
 
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+-/+ destroy and then create replacement
 
+Terraform will perform the following actions:
+
+  # yandex_storage_bucket.iam-bucket must be replaced
+-/+ resource "yandex_storage_bucket" "iam-bucket" {
+      ~ bucket                = "acheusov.netology" -> "acheusov-netology-bucket" # forces replacement
+      ~ bucket_domain_name    = "acheusov.netology.storage.yandexcloud.net" -> (known after apply)
+      ~ default_storage_class = "STANDARD" -> (known after apply)
+      ~ id                    = "acheusov.netology" -> (known after apply)
+      - max_size              = 0 -> null
+      - tags                  = {} -> null
+      + website_domain        = (known after apply)
+      + website_endpoint      = (known after apply)
+        # (3 unchanged attributes hidden)
+
+      ~ anonymous_access_flags (known after apply)
+      - anonymous_access_flags {
+          - config_read = false -> null
+          - list        = false -> null
+          - read        = false -> null
+        }
+
+      ~ versioning (known after apply)
+      - versioning {
+          - enabled = false -> null
+        }
+    }
+
+Plan: 1 to add, 0 to change, 1 to destroy.
+yandex_storage_bucket.iam-bucket: Destroying... [id=acheusov.netology]
+yandex_storage_bucket.iam-bucket: Still destroying... [id=acheusov.netology, 10s elapsed]
+yandex_storage_bucket.iam-bucket: Still destroying... [id=acheusov.netology, 20s elapsed]
+yandex_storage_bucket.iam-bucket: Still destroying... [id=acheusov.netology, 30s elapsed]
+╷
+│ Error: error deleting Storage Bucket (acheusov.netology): timeout while waiting for state to become 'success' (timeout: 5s)
+│
+│
+╵
+acheusov2@acheusov2:~/Diplom/cloud-terraform$
+
+```
 
 
 ---
