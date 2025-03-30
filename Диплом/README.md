@@ -53,7 +53,7 @@
 ![image](https://github.com/user-attachments/assets/60bfef52-4e80-4534-86c7-6353ad1140aa)  
 2.  
 ![image](https://github.com/user-attachments/assets/8687d9ff-f686-415a-9b79-e15304e1765f)  
-![image](https://github.com/user-attachments/assets/2d48f210-11e7-4280-8d90-e06387b2e294)  
+![image](https://github.com/user-attachments/assets/32713597-a204-4fa6-9e5c-c4c428d9002e)  
 3.  
 ![image](https://github.com/user-attachments/assets/324ec9bb-290e-4053-b5eb-368239a2099c)  
 4.  
@@ -121,8 +121,8 @@ acheusov2@acheusov2:~/Diplom/cloud-terraform$
 
 ```
 В рамках задания и для дальнйешего использования были также создан кластер из 3 ВМ:  
-
-
+![image](https://github.com/user-attachments/assets/8b816cb3-d965-45d7-a2b4-c1852d0a1c59)  
+   
 Полученная конфигурация инфраструктуры является предварительной, поэтому в ходе дальнейшего выполнения задания возможны изменения.  
 
 
