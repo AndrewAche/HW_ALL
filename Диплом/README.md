@@ -148,48 +148,9 @@ acheusov2@acheusov2:~/Diplom/cloud-terraform$
 3. Команда `kubectl get pods --all-namespaces` отрабатывает без ошибок.
  
 ### Решение
-![image](https://github.com/user-attachments/assets/def16287-9585-47ee-b10c-4b2b984beec1)  
 
-```
-acheusov2@acheusov2:~/Diplom/myapp/myapp$ docker build -t myapp:latest .
-[+] Building 11.4s (9/9) FINISHED
- => [internal] load build definition from Dockerfile                                                                                                       0.1s
- => => transferring dockerfile: 281B                                                                                                                       0.0s
- => [internal] load .dockerignore                                                                                                                          0.1s
- => => transferring context: 2B                                                                                                                            0.0s
- => [internal] load metadata for docker.io/library/nginx:1.23.3                                                                                            2.0s
- => [1/4] FROM docker.io/library/nginx:1.23.3@sha256:f4e3b6489888647ce1834b601c6c06b9f8c03dee6e097e13ed3e28c01ea3ac8c                                      5.1s
- => => resolve docker.io/library/nginx:1.23.3@sha256:f4e3b6489888647ce1834b601c6c06b9f8c03dee6e097e13ed3e28c01ea3ac8c                                      0.1s
- => => sha256:f4e3b6489888647ce1834b601c6c06b9f8c03dee6e097e13ed3e28c01ea3ac8c 1.86kB / 1.86kB                                                             0.0s
- => => sha256:ac232364af842735579e922641ae2f67d5b8ea97df33a207c5ea05f60c63a92d 7.66kB / 7.66kB                                                             0.0s
- => => sha256:557c9ede65655e5a70e4a32f1651638ea3bfb0802edd982810884602f700ba25 1.57kB / 1.57kB                                                             0.0s
- => => sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7 31.41MB / 31.41MB                                                           1.4s
- => => sha256:84181e80d10e844350789d3324e848cf728df4f3d0f6c978789dd489f493934a 25.47MB / 25.47MB                                                           0.8s
- => => sha256:1ff0f94a80076ab49af75159e23f062a30a75d333a8e9c021bf39669230afcfe 625B / 625B                                                                 1.5s
- => => sha256:d4ceccbfc2696101c94fbf2149036e4ff815e4723e518721ff85105ce5aa8afc 1.41kB / 1.41kB                                                             1.8s
- => => extracting sha256:f1f26f5702560b7e591bef5c4d840f76a232bf13fd5aefc4e22077a1ae4440c7                                                                  1.5s
- => => sha256:e9427fcfa8642f8ddf5106f742a75eca0dbac676cf8145598623d04fa45dd74e 773B / 773B                                                                 1.9s
- => => sha256:d776269cad101c9f8e33e2baa0a05993ed0786604d86ea525f62d5d7ae7b9540 959B / 959B                                                                 2.0s
- => => extracting sha256:84181e80d10e844350789d3324e848cf728df4f3d0f6c978789dd489f493934a                                                                  0.6s
- => => extracting sha256:1ff0f94a80076ab49af75159e23f062a30a75d333a8e9c021bf39669230afcfe                                                                  0.0s
- => => extracting sha256:d776269cad101c9f8e33e2baa0a05993ed0786604d86ea525f62d5d7ae7b9540                                                                  0.0s
- => => extracting sha256:e9427fcfa8642f8ddf5106f742a75eca0dbac676cf8145598623d04fa45dd74e                                                                  0.0s
- => => extracting sha256:d4ceccbfc2696101c94fbf2149036e4ff815e4723e518721ff85105ce5aa8afc                                                                  0.0s
- => [internal] load build context                                                                                                                          0.1s
- => => transferring context: 798B                                                                                                                          0.0s
- => [2/4] ADD conf /etc/nginx                                                                                                                              2.8s
- => [3/4] ADD content /usr/share/nginx/html                                                                                                                0.3s
- => [4/4] RUN sed -i 's/{{VERSION}}/'"0.0.3"'/g' /usr/share/nginx/html/index.html                                                                          0.6s
- => exporting to image                                                                                                                                     0.2s
- => => exporting layers                                                                                                                                    0.2s
- => => writing image sha256:828186a42c678e3843836f43357acbddc524d8643b958a84a60c585201e06b14                                                               0.0s
- => => naming to docker.io/library/myapp:latest                                                                                                            0.0s
-acheusov2@acheusov2:~/Diplom/myapp/myapp$ docker image ls
-REPOSITORY                                                            TAG              IMAGE ID       CREATED          SIZE
-myapp                                                                 latest           828186a42c67   14 seconds ago   142MB
-```
 
-[](https://hub.docker.com/repository/docker/andrewache/myapp1/general)  
+
 
 ---
 ### Создание тестового приложения
