@@ -1,4 +1,3 @@
-4
 # [Дипломный практикум в Yandex.Cloud](https://github.com/netology-code/devops-diplom-yandexcloud) - `Ачеусов Андрей`
   * [Цели:](#цели)
   * [Этапы выполнения:](#этапы-выполнения)
