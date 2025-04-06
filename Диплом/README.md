@@ -213,8 +213,8 @@ REPOSITORY                                                            TAG       
 myapp                                                                 latest           828186a42c67   14 seconds ago   142MB
 ```
 
-[Регистри с собранным docker image](https://hub.docker.com/repository/docker/andrewache/myapp1/general)  
-[Git репозиторий с тестовым приложением и Dockerfile](https://github.com/AndrewAche/myapp)
+  * [Регистри с собранным docker image](https://hub.docker.com/repository/docker/andrewache/myapp1/general)  
+  * [Git репозиторий с тестовым приложением и Dockerfile](https://github.com/AndrewAche/myapp)
 
 ---
 ### Подготовка cистемы мониторинга и деплой приложения
