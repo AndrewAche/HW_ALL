@@ -520,7 +520,8 @@ root@node-0:/home/ubuntu$
 
 
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.  
-![image](https://github.com/user-attachments/assets/1d4c606f-2ce9-4b3b-ae41-d0858fc8af52)  
+![image](https://github.com/user-attachments/assets/4f59682c-13ce-4504-8b2b-61316ba6efcc)  
+
 
 
 4. Http доступ на 80 порту к тестовому приложению.   
