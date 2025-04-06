@@ -1,3 +1,4 @@
+4
 # [Дипломный практикум в Yandex.Cloud](https://github.com/netology-code/devops-diplom-yandexcloud) - `Ачеусов Андрей`
   * [Цели:](#цели)
   * [Этапы выполнения:](#этапы-выполнения)
@@ -214,7 +215,7 @@ myapp                                                                 latest    
 ```
 
 [Регистри с собранным docker image](https://hub.docker.com/repository/docker/andrewache/myapp1/general)  
-
+[Git репозиторий с тестовым приложением и Dockerfile](https://github.com/AndrewAche/myapp)
 
 ---
 ### Подготовка cистемы мониторинга и деплой приложения
