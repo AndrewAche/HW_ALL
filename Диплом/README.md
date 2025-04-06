@@ -121,7 +121,7 @@ acheusov2@acheusov2:~/Diplom/cloud-terraform$
 
 ```
 В рамках задания и для дальнйешего использования были также создан кластер из 3 ВМ:  
-![image](https://github.com/user-attachments/assets/8b816cb3-d965-45d7-a2b4-c1852d0a1c59)  
+![image](https://github.com/user-attachments/assets/27407fc5-78f9-4664-bee1-44051f704110)   
    
 Полученная конфигурация инфраструктуры является предварительной, поэтому в ходе дальнейшего выполнения задания возможны изменения.  
 
