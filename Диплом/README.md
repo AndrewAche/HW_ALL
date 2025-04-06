@@ -423,6 +423,28 @@ myapp                                                                 latest    
 
 ### Решение
 
+1. Git репозиторий с конфигурационными файлами для настройки Kubernetes.  
+```
+acheusov2@acheusov2:~$ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+acheusov2@acheusov2:~$ chmod 700 get_helm.sh
+acheusov2@acheusov2:~$ ./get_helm.sh
+Helm v3.17.2 is available. Changing from version v3.16.1.
+Downloading https://get.helm.sh/helm-v3.17.2-linux-amd64.tar.gz
+Verifying checksum... Done.
+Preparing to install helm into /usr/local/bin
+helm installed into /usr/local/bin/helm
+
+```
+
+2. Http доступ на 80 порту к web интерфейсу grafana.  
+
+
+3. Дашборды в grafana отображающие состояние Kubernetes кластера.  
+
+
+4. Http доступ на 80 порту к тестовому приложению.   
+
+
 
 
 
