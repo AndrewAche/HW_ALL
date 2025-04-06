@@ -148,8 +148,191 @@ acheusov2@acheusov2:~/Diplom/cloud-terraform$
 3. Команда `kubectl get pods --all-namespaces` отрабатывает без ошибок.
  
 ### Решение
+Создал Kubernetes кластер на базе предварительно созданной инфраструктуры. Обеспечил доступ к ресурсам из Интернета.  
 
+Для выполнения данного задания использовал Kubespray - git clone https://github.com/kubernetes-sigs/kubespray.git  
 
+При создании инфраструктуры был использован [hosts.yaml]()
+
+1. Работоспособный Kubernetes кластер.  
+
+```
+acheusov2@acheusov2:~/Diplom/cloud-terraform/kubespray$ ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml -b
+
+PLAY [Check Ansible version] **********************************************************************************************
+
+TASK [Check 2.15.4 <= Ansible version < 2.17.0] ***************************************************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [Check that python netaddr is installed] *****************************************************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [Check that jinja is not too old (install via pip)] ******************************************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+[WARNING]: Could not match supplied host pattern, ignoring: kube-master
+
+PLAY [Add kube-master nodes to kube_control_plane] ************************************************************************
+skipping: no hosts matched
+[WARNING]: Could not match supplied host pattern, ignoring: kube-node
+
+PLAY [Add kube-node nodes to kube_node] ***********************************************************************************
+skipping: no hosts matched
+[WARNING]: Could not match supplied host pattern, ignoring: k8s-cluster
+
+PLAY [Add k8s-cluster nodes to k8s_cluster] *******************************************************************************
+skipping: no hosts matched
+[WARNING]: Could not match supplied host pattern, ignoring: calico-rr
+
+PLAY [Add calico-rr nodes to calico_rr] ***********************************************************************************
+skipping: no hosts matched
+[WARNING]: Could not match supplied host pattern, ignoring: no-floating
+
+PLAY [Add no-floating nodes to no_floating] *******************************************************************************
+skipping: no hosts matched
+[WARNING]: Could not match supplied host pattern, ignoring: bastion
+
+PLAY [Install bastion ssh config] *****************************************************************************************
+skipping: no hosts matched
+
+PLAY [Bootstrap hosts for Ansible] ****************************************************************************************
+[WARNING]: raw module does not support the environment keyword
+[WARNING]: raw module does not support the environment keyword
+[WARNING]: raw module does not support the environment keyword
+
+TASK [bootstrap-os : Fetch /etc/os-release] *******************************************************************************
+ok: [node-0]
+ok: [node-2]
+ok: [node-1]
+
+TASK [bootstrap-os : Create remote_tmp for it is used by another module] **************************************************
+ok: [node-0]
+ok: [node-2]
+ok: [node-1]
+
+TASK [bootstrap-os : Gather facts] ****************************************************************************************
+ok: [node-2]
+ok: [node-1]
+ok: [node-0]
+
+TASK [bootstrap-os : Assign inventory name to unconfigured hostnames (non-CoreOS, non-Flatcar, Suse and ClearLinux, non-Fedora)] ***
+ok: [node-2]
+ok: [node-1]
+ok: [node-0]
+
+TASK [bootstrap-os : Ensure bash_completion.d folder exists] **************************************************************
+ok: [node-0]
+ok: [node-2]
+ok: [node-1]
+
+PLAY [Gather facts] ***********************************************************************************************
+TASK [network_plugin/calico : Check vars defined correctly] ***************************************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [network_plugin/calico : Check calico network backend defined correctly] *********************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [network_plugin/calico : Check ipip and vxlan mode defined correctly] ************************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [network_plugin/calico : Check ipip and vxlan mode if simultaneously enabled] ****************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+TASK [network_plugin/calico : Get Calico default-pool configuration] ******************************************************
+ok: [node-0]
+
+TASK [network_plugin/calico : Set calico_pool_conf] ***********************************************************************
+ok: [node-0]
+
+TASK [network_plugin/calico : Check if inventory match current cluster configuration] *************************************
+ok: [node-0] => {
+    "changed": false,
+    "msg": "All assertions passed"
+}
+
+PLAY RECAP ****************************************************************************************************************
+node-0                     : ok=655  changed=24   unreachable=0    failed=0    skipped=1142 rescued=0    ignored=1   
+node-1                     : ok=449  changed=10   unreachable=0    failed=0    skipped=705  rescued=0    ignored=1   
+node-2                     : ok=449  changed=10   unreachable=0    failed=0    skipped=701  rescued=0    ignored=1   
+
+acheusov2@acheusov2:~/Diplom/cloud-terraform/kubespray$
+```
+
+2. Kubernetes кластер  
+
+```
+acheusov2@acheusov2:~/Diplom/cloud-terraform/kubespray$ kubectl get nodes
+NAME     STATUS   ROLES           AGE   VERSION
+node-0   Ready    control-plane   21m   v1.29.5
+node-1   Ready    <none>          20m   v1.29.5
+node-2   Ready    <none>          20m   v1.29.5
+acheusov2@acheusov2:~/Diplom/cloud-terraform/kubespray$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE
+kube-system   calico-kube-controllers-68485cbf9c-vxx9l   1/1     Running   0          17m
+kube-system   calico-node-8nzqm                          1/1     Running   0          18m
+kube-system   calico-node-kzdq5                          1/1     Running   0          18m
+kube-system   calico-node-wbxw2                          1/1     Running   0          18m
+kube-system   coredns-69db55dd76-clths                   1/1     Running   0          16m
+kube-system   coredns-69db55dd76-tvkh2                   1/1     Running   0          16m
+kube-system   dns-autoscaler-6f4b597d8c-jj2vz            1/1     Running   0          16m
+kube-system   kube-apiserver-node-0                      1/1     Running   2          19m
+kube-system   kube-controller-manager-node-0             1/1     Running   2          19m
+kube-system   kube-proxy-m28z6                           1/1     Running   0          3m3s
+kube-system   kube-proxy-rslls                           1/1     Running   0          3m3s
+kube-system   kube-proxy-xpck8                           1/1     Running   0          3m3s
+kube-system   kube-scheduler-node-0                      1/1     Running   1          19m
+kube-system   nginx-proxy-node-1                         1/1     Running   0          19m
+kube-system   nginx-proxy-node-2                         1/1     Running   0          19m
+kube-system   nodelocaldns-7g58k                         1/1     Running   0          16m
+kube-system   nodelocaldns-cszrn                         1/1     Running   0          16m
+kube-system   nodelocaldns-kqkgb                         1/1     Running   0          16m
+ 
+```
+
+3. Содержание файла `~/.kube/config` :     
+```
+acheusov2@acheusov2:~/Diplom/src/terraform$ kubectl config view
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://84.201.158.176:6443
+  name: cluster.local
+contexts:
+- context:
+    cluster: cluster.local
+    user: kubernetes-admin
+  name: kubernetes-admin@cluster.local
+current-context: kubernetes-admin@cluster.local
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: DATA+OMITTED
+    client-key-data: DATA+OMITTED
+
+```
 
 
 ---
