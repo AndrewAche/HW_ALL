@@ -520,10 +520,23 @@ root@node-0:/home/ubuntu$
 
 
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.  
+![image](https://github.com/user-attachments/assets/1d4c606f-2ce9-4b3b-ae41-d0858fc8af52)  
 
 
 4. Http доступ на 80 порту к тестовому приложению.   
+![image](https://github.com/user-attachments/assets/be6caf30-2762-448d-90b7-ddcdbbc45813)   
+```
+root@node-0:/home/ubuntu/myapp$ kubectl get pods,svc,deployment  -n monitoring
+NAME                                 READY   STATUS    RESTARTS   AGE
+pod/myapp-687d8adf29f4-qrpfb           1/1     Running   0          51m
 
+NAME                               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                         AGE
+service/myapp-service              dePort     10.233.52.164    <none>        80:30080/TCP                    10h
+
+NAME                                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/myapp                                 1/1     1            1           53m
+root@node-0:/home/ubuntu/myapp$
+```
 
 
 
@@ -550,7 +563,7 @@ root@node-0:/home/ubuntu$
 
 
 ![image](https://github.com/user-attachments/assets/5fcf1e45-f4ef-43b4-8eee-adf46f9960b3)
-![image](https://github.com/user-attachments/assets/0d8c5e00-31b5-4d36-9d0e-25055c120071)
+
 
 
 
