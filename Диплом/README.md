@@ -521,10 +521,11 @@ root@node-0:/home/ubuntu$
 
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.  
 ![image](https://github.com/user-attachments/assets/4f59682c-13ce-4504-8b2b-61316ba6efcc)  
+  
 ![image](https://github.com/user-attachments/assets/af233f84-a972-46ab-9f0f-5b18fc85a884)  
 
 
-4. Http доступ на 80 порту к тестовому приложению.   
+5. Http доступ на 80 порту к тестовому приложению.   
 ![image](https://github.com/user-attachments/assets/be6caf30-2762-448d-90b7-ddcdbbc45813)   
 ```
 root@node-0:/home/ubuntu/myapp$ kubectl get pods,svc,deployment  -n monitoring
@@ -561,9 +562,15 @@ root@node-0:/home/ubuntu/myapp$
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.
 
 ### Решение
+1. Интерфейс ci/cd сервиса доступен по http.  
 
 
-![image](https://github.com/user-attachments/assets/5fcf1e45-f4ef-43b4-8eee-adf46f9960b3)
+2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
+
+
+3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.   
+
+
 
 
 
