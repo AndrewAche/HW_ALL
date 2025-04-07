@@ -35,5 +35,3 @@ resource "yandex_compute_instance" "cluster-k8s" {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
   }
 }
-
-
