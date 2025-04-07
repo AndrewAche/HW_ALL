@@ -526,7 +526,7 @@ root@node-0:/home/ubuntu$
 
 
 5. Http доступ на 80 порту к тестовому приложению.   
-![image](https://github.com/user-attachments/assets/616e87df-7c74-4060-aa59-96658f477c5b)  
+![image](https://github.com/user-attachments/assets/dca45968-4e8e-4ae1-b527-83381f4fb193)  
 
 
 ```
