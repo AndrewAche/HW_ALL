@@ -526,7 +526,8 @@ root@node-0:/home/ubuntu$
 
 
 5. Http доступ на 80 порту к тестовому приложению.   
-![image](https://github.com/user-attachments/assets/f3fbb588-0bad-4781-931f-06a04a930c06)
+![image](https://github.com/user-attachments/assets/616e87df-7c74-4060-aa59-96658f477c5b)  
+
 
 ```
 root@node-0:/home/ubuntu/myapp$ kubectl get pods,svc,deployment  -n monitoring
