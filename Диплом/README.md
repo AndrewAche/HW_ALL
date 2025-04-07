@@ -152,7 +152,7 @@ acheusov2@acheusov2:~/Diplom/cloud-terraform$
 
 Для выполнения данного задания использовал Kubespray - git clone https://github.com/kubernetes-sigs/kubespray.git  
 
-При создании инфраструктуры был использован [hosts.yaml]()
+При создании инфраструктуры был использован [hosts.yaml](https://github.com/AndrewAche/HW_ALL/blob/main/Диплом/kubespray/hosts.yaml)
 
 1. Работоспособный Kubernetes кластер.  
 
