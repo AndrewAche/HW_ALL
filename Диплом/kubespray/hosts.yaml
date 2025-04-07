@@ -1,0 +1,30 @@
+all:
+  hosts:
+    node-0:
+      ansible_host: 84.201.153.225
+      ansible_user: ubuntu
+    node-1:
+      ansible_host: 84.201.158.176
+      ansible_user: ubuntu
+    node-2:
+      ansible_host: 51.250.46.105
+      ansible_user: ubuntu
+  children:
+    kube_control_plane:
+      hosts:
+        node-0:
+    kube_node:
+      hosts:
+        node-1:
+        node-2:
+    etcd:
+      hosts:
+        node-0:
+    k8s_cluster:
+      children:
+        kube_control_plane:
+        kube_node:
+    calico_rr:
+      hosts: {}
+
+
