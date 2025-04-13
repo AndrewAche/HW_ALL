@@ -565,6 +565,12 @@ root@node-0:/home/ubuntu/myapp$
 
 ### Решение
 1. Интерфейс ci/cd сервиса доступен по http.  
+Создан собственный образ [Dockerfile для создания]()  
+![image](https://github.com/user-attachments/assets/57e7272d-7638-44fd-a5ed-9f4319b55ff7)  
+Далее выполняю скрипт [jenkins-install.sh]() Поднимаются контейнеры jenkins и dind(нужен для работы docker):  
+![image](https://github.com/user-attachments/assets/b6ad73f1-40e7-47d0-acdd-4ba14c252995)  
+Интерфейс ci/cd сервиса доступен по http:  
+![image](https://github.com/user-attachments/assets/2fced60d-a8be-4bcd-9831-82e7b263d9c4)  
 
 
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
