@@ -571,8 +571,10 @@ root@node-0:/home/ubuntu/myapp$
 ![image](https://github.com/user-attachments/assets/b6ad73f1-40e7-47d0-acdd-4ba14c252995)  
 Интерфейс ci/cd сервиса доступен по http:  
 ![image](https://github.com/user-attachments/assets/2fced60d-a8be-4bcd-9831-82e7b263d9c4)  
-
-
+IP адресс ВМ:  
+![image](https://github.com/user-attachments/assets/656d314a-6b02-4c6b-9da0-8ef412c81d6c)  
+  
+  
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
 
 
