@@ -564,24 +564,31 @@ root@node-0:/home/ubuntu/myapp$
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.
 
 ### Решение
-Для решения задачи была использована отдельная ВМ с дальнейшей установкой на ней ci/cd с помощью docker container   
-![image](https://github.com/user-attachments/assets/088fb6db-8bf7-4b46-8403-1b266647cc98)  
-Создан собственный образ [Dockerfile для создания](https://github.com/AndrewAche/HW_ALL/blob/main/Диплом/jenkins/Dockerfile)  
-![image](https://github.com/user-attachments/assets/57e7272d-7638-44fd-a5ed-9f4319b55ff7)  
-Далее выполняю скрипт [jenkins-install.sh](https://github.com/AndrewAche/HW_ALL/blob/main/Диплом/jenkins/jenkins-install.sh) Поднимаются контейнеры jenkins и dind (нужен для работы docker):  
-![image](https://github.com/user-attachments/assets/b6ad73f1-40e7-47d0-acdd-4ba14c252995)  
+Для автоматической сборки docker image и деплоя приложения при изменении кода будет использоваться Github actions   
+
+Для работы ci-cd в github action требуются учетные данные.  
+
+Поэтому создаем в Dockerhub секретный токен.  
+
+Затем создаем в github секреты для доступа к DockerHub.  
+
+KUBE_CONFIG_DATA
+
+DOCKERHUB_TOKEN
+
+DOCKERHUB_USERNAME
 
 
 1. Интерфейс ci/cd сервиса доступен по http:  
-![image](https://github.com/user-attachments/assets/2fced60d-a8be-4bcd-9831-82e7b263d9c4)  
-IP адресс ВМ:  
-![image](https://github.com/user-attachments/assets/656d314a-6b02-4c6b-9da0-8ef412c81d6c)  
+![image](https://github.com/user-attachments/assets/31ccd043-7270-4417-8360-7011826e0b24)
+[Ссылка](https://github.com/AndrewAche/myapp/actions)  
+
+ 
   
-  
-2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
+3. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
 
 
-3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.   
+4. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.   
 
 
 
