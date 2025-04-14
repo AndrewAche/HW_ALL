@@ -583,14 +583,116 @@ DOCKERHUB_USERNAME
 ![image](https://github.com/user-attachments/assets/31ccd043-7270-4417-8360-7011826e0b24)
 [Ссылка](https://github.com/AndrewAche/myapp/actions)  
 
- 
   
 3. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.  
+[production_deployment.yml](https://github.com/AndrewAche/myapp/blob/main/.github/workflows/production_deployment.yml)  
+```
+name: myapp
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+env:
+  IMAGE_TAG: andrewache/myapp
+  RELEASE_NAME: myapp
+  NAMESPACE: monitoring
 
+jobs:
+  build-and-push:
+    name: Build Docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Extract version from commit messages
+        run: |
+          VERSION=$(git log -1 --pretty=format:%B)
+          if [[ ! -z "$VERSION" ]]; then
+            echo "VERSION=$VERSION" >> $GITHUB_ENV
+          else
+            echo "No version found in the commit message"
+            exit 1
+          fi
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ env.IMAGE_TAG }}:${{ env.VERSION }}
+
+  deploy:
+    needs: build-and-push
+    name: Deploy to Kubernetes
+    if: startsWith(github.ref, 'refs/heads/main') || startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Kubernetes
+        uses: azure/setup-kubectl@v1
+        with:
+          version: 'v1.21.0'
+
+
+#      - name: version from commit messages
+#        run: |
+#          COMMIT_MESSAGE=$(git log -1 --pretty=format%B)
+#          if [[ "$COMMIT_MESSAGE" == v* ]]; then
+#            echo "DEPLOY=true" >> $GITHUB_ENV
+#          else 
+#           echo "DEPLOY=false" >> $GITHUB_ENV
+#          fi
+ 
+      - name: Extract version from commit messages
+        run: |
+          VERSION=$(git log -1 --pretty=format:%B)
+          if [[ ! -z "$VERSION" ]]; then
+            echo "VERSION=$VERSION" >> $GITHUB_ENV
+          else
+            echo "No version found in the commit message"
+            exit 1
+          fi
+
+      - name: Replace image tag in deploy.yaml
+        if: env.DEPLOY == 'false'
+       
+        run: |
+          sed -i "s|image: andrewache/myapp:.*|image: ${{ env.IMAGE_TAG }}|" ./myapp/deploy.yaml
+        env:
+          IMAGE_TAG: andrewache/myapp:${{ env.VERSION }}
+      
+      - name: Create kubeconfig
+        run: |
+          mkdir -p $HOME/.kube/
+      - name: Authenticate to Kubernetes cluster
+        env:
+          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+        run: |
+          echo "${KUBE_CONFIG_DATA}" | base64 --decode > ${HOME}/.kube/config
+      - name: Apply Kubernetes manifests
+        run: |
+          kubectl apply -f ./myapp/deploy.yaml 
+```
 
 4. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.   
+![image](https://github.com/user-attachments/assets/66eaf9be-329a-4e85-b08b-c34c7d3de3bf)  
+[Ссылка](https://hub.docker.com/repository/docker/andrewache/myapp/general)  
 
-
+![image](https://github.com/user-attachments/assets/7c722c41-eb49-4da9-8662-c06e98938e4a)  
 
 
 
